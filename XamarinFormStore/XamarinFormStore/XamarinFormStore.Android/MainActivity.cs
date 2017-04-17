@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using 
+using ZXing.Net.Mobile.Android;
 
 namespace XamarinFormStore.Droid
 {

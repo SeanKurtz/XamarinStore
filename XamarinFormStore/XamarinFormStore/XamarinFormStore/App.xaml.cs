@@ -19,8 +19,9 @@ namespace XamarinFormStore
             {
                 if (database == null)
                 {
-                    database = new ItemDatabase(DependencyService.Get<IFileHelper>)
+                    database = new ItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ToDo.db3"));
                 }
+                return database;
             }
         }
 
