@@ -2,16 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
 
 namespace XamarinFormStore
 {
     public partial class App : Application
     {
+        static ItemDatabase database;
         public App()
         {
              MainPage = new NavigationPage(new XamarinFormStore.MainPage());
+        }
+        public static ItemDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new ItemDatabase(DependencyService.Get<IFileHelper>)
+                }
+            }
         }
 
         protected override void OnStart()
@@ -28,5 +38,6 @@ namespace XamarinFormStore
         {
             // Handle when your app resumes
         }
+
     }
 }
