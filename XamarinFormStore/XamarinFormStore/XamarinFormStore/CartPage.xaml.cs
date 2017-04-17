@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,13 @@ namespace XamarinFormStore
         public CartPage()
         {
             InitializeComponent();
+            this.BindingContext = new[] { "a", "b", "c" };
+        }
+        void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e == null) return; 
+            Debug.WriteLine("Tapped: " + e.Item);
+            ((ListView)sender).SelectedItem = null; 
         }
     }
 }

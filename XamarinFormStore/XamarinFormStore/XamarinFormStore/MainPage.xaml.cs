@@ -32,7 +32,7 @@ namespace XamarinFormStore
 
         private async void Camera_Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new XamarinFormStore.CameraPage());
+            await Navigation.PushAsync(new XamarinFormStore.ScannerPage());
         }
     }
 }
