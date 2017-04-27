@@ -1,13 +1,14 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XamarinFormStore.Assets.Data;
 using SQLite;
 
 
 
-namespace XamarinFormStore
+namespace XamarinFormStore.Assets.Data
 {
 
     public class ItemDatabase
@@ -17,25 +18,25 @@ namespace XamarinFormStore
         public ItemDatabase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
-            database.CreateTableAsync<ToDoItem>().Wait();
+           // database.CreateTableAsync<Item>().Wait();
         }
 
-        public Task<List<ToDoItem>> GetItemsAsync()
+        public Task<List<Item>> GetItemsAsync()
         {
-            return database.Table<ToDoItem>().ToListAsync();
+            return database.Table<Item>().ToListAsync();
         }
 
-        public Task<List<ToDoItem>> GetItemsNotDoneAsync()
+        public Task<List<Item>> GetItemsNotDoneAsync()
         {
-            return database.QueryAsync<ToDoItem>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
+            return database.QueryAsync<Item>("SELECT * FROM [TodoItem] WHERE [Done] = 0");
         }
 
-        public Task<ToDoItem> GetItemAsync(int id)
+        public Task<Item> GetItemAsync(int id)
         {
-            return database.Table<ToDoItem>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            return database.Table<Item>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveItemAsync(ToDoItem item)
+        public Task<int> SaveItemAsync(Item item)
         {
             if (item.ID != 0)
             {
@@ -47,9 +48,10 @@ namespace XamarinFormStore
             }
         }
 
-        public Task<int> DeleteItemAsync(ToDoItem item)
+        public Task<int> DeleteItemAsync(Item item)
         {
             return database.DeleteAsync(item);
         }
     }
 }
+*/

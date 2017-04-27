@@ -1,5 +1,5 @@
 ﻿
-namespace XamarinFormStore
+namespace XamarinFormStore.Assets.Data
 {
     public interface IFileHelper
     {

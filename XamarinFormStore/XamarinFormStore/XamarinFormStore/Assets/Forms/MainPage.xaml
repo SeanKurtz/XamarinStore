@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinFormStore"
+             x:Class="XamarinFormStore.Assets.Forms.MainPage">
+    <StackLayout Spacing= "10" Orientation="Vertical">
+        <Button Text="Store Page" Clicked="Store_Button_Clicked" BackgroundColor="White" VerticalOptions="Start"/>
+        <Button Text="Scanner Page" Clicked="Camera_Button_Clicked" BackgroundColor="Gray" VerticalOptions="Start"/>
+        <Button Text="Cart Page" Clicked="Cart_Button_Clicked" BackgroundColor="Green" VerticalOptions="Start"/>
+        <Button Text="Options Page" Clicked="Options_Button_Clicked_1" BackgroundColor="Blue" VerticalOptions="Start"/>
+    </StackLayout>
+
+</ContentPage>

@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using Xamarin.Forms;
 using XamarinFormStore.Droid;
+using XamarinFormStore.Assets.Data;
 
 [assembly: Dependency(typeof(FileHelper))]
 namespace XamarinFormStore.Droid

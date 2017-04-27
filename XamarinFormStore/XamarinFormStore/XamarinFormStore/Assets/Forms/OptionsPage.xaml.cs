@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XamarinFormStore
+namespace XamarinFormStore.Assets.Forms
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CartPage : ContentPage
+    public partial class OptionsPage : ContentPage
     {
-        public CartPage()
+        public OptionsPage()
         {
             InitializeComponent();
         }
-
     }
 }

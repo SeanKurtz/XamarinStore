@@ -8,12 +8,13 @@ namespace XamarinFormStore
 {
     public partial class App : Application
     {
-        static ItemDatabase database;
+        //static ItemDatabase database;
         public App()
         {
-             MainPage = new NavigationPage(new XamarinFormStore.MainPage());
+            MainPage = new NavigationPage();
+            MainPage.Navigation.PushAsync(new XamarinFormStore.Assets.Forms.MainPage());
         }
-        public static ItemDatabase Database
+        /*public static ItemDatabase Database
         {
             get
             {
@@ -24,6 +25,7 @@ namespace XamarinFormStore
                 return database;
             }
         }
+        */
 
         protected override void OnStart()
         {

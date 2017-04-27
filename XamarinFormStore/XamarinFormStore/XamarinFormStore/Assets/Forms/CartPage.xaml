@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinFormStore"
+             x:Class="XamarinFormStore.Assets.Forms.CartPage"
+             Title="Cart">
+
+    <ListView x:Name="ItemListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin= "20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#eee" Padding="10">
+                        <Image Source = "{Binding Image}" />
+                        <Label Text = "{Binding Title}" />
+                        <Label Text="{Binding Description}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

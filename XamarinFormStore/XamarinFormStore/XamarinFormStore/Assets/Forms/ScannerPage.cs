@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
-
 using Xamarin.Forms;
 using ZXing.Net.Mobile.Forms;
 
-namespace XamarinFormStore
+namespace XamarinFormStore.Assets.Forms
 {
     public class ScannerPage : ContentPage
     {
